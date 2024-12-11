@@ -1,0 +1,12 @@
+name: cd_recovery
+version: 1.0.0
+
+environment:
+  sdk: ^3.2.1
+
+dependencies: 
+  win32: any
+  ffi: any
+  logging: any
+  collection: any
+  path: any
