@@ -99,7 +99,7 @@ void main() {
       //   return;
       // }
 
-      final cdSize = CDDriveController.getDiscSize(driverCdSelecionado);
+      final cdSize = CDDriveController.getDiscSizeSimple(driverCdSelecionado);
       stringMessage = 'Tamanho do CD "$cdName": $cdSize bytes';
       statusMessage.text = stringMessage;
       logSink.writeln(stringMessage);

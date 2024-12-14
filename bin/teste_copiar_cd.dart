@@ -1,11 +1,14 @@
-import 'package:cd_recovery/src/utils/cd_drive_controller.dart';
-import 'package:cd_recovery/src/windows/utils/utils.dart';
+import 'package:cd_recovery/src/utils/cd_drive_controller2.dart';
 
-void main(List<String> args) {
-  final cdDrive = 'E';
-  final outputFile = 'output.bin';
-  CDDriveController.copyCDRaw(cdDrive, outputFile);
+void main() {
+  main2();
 }
+
+// void main(List<String> args) {
+//   final cdDrive = 'E';
+//   final outputFile = 'output.bin';
+//   CDDriveController.copyCDRaw(cdDrive, outputFile);
+// }
 
 // void main() {
 //   final drive = 'E';

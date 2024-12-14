@@ -467,6 +467,35 @@ base class STORAGE_DEVICE_DESCRIPTOR extends Struct {
   // RawDeviceProperties[1] começa aqui, mas é variável
 }
 
+base class SCSI_PASS_THROUGH extends Struct {
+  @Uint16()
+  external int Length;
+  @Uint8()
+  external int ScsiStatus;
+  @Uint8()
+  external int PathId;
+  @Uint8()
+  external int TargetId;
+  @Uint8()
+  external int Lun;
+  @Uint8()
+  external int CdbLength;
+  @Uint8()
+  external int SenseInfoLength;
+  @Uint8()
+  external int DataIn;
+  @Uint8()
+  external int Reserved;
+  @Uint32()
+  external int DataTransferLength;
+  @Uint32()
+  external int TimeOutValue;
+  @Uint64()
+  external int DataBufferOffset; // uintptr_t
+  @Uint32()
+  external int SenseInfoOffset;
+}
+
 /// Contains information used in asynchronous (or overlapped) input and
 /// output (I/O).
 ///
